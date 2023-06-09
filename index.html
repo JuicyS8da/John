@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="tab-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!--В хедере лучше ещё добавить ссылку на homepage, не знаю как, побудь дизайнером чуток-->
+        <header class="header">
+            <div class="container">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Works</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link popup-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="popup" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <img src="img/icons/x-button-icon-20.jpg" class="popup__close">
+                            <div class="popup__title">Contact</div>
+                            <div class="popup__text text">
+                                <div class="popup__contact-item">
+                                    <p class="text">Email: <a class="popup__emaillink">example@mail.com</a></p>
+                                    <button class="popup__emailcopybtn"><img class="popup__copyicon" src="img/icons/copy-icon.png"></button>
+                                </div>
+                                <p id="email-copy-check" class="popup__copy-check">Copied!</p>
+                                <div class="popup__contact-item">
+                                    <p class="text">Telegram: <a class="popup__telegramlink">@MEMHblN_chel</a></p>
+                                    <button class="popup__telegramcopybtn"><img class="popup__copyicon" src="img/icons/copy-icon.png"></button>
+                                </div>
+                                <p id="telegram-copy-check" class="popup__copy-check">Copied!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section class="hero">
+                    <div class="about">
+                        <div class="about__content">
+                            <h1 class="about__title">Hi, I am John,<br>Creative Technologist</h1>
+                            <p class="about__desc text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                        <picture class="about__photo">
+                            <img class="about__photo-item" src="../img/john_hq.jpg" alt="john">
+                        </picture>
+                    </div>
+                    <div class="about__button_container">
+                        <button class="about__button">Download Resume</button>
+                    </div>
+                </section>
+            </div>
+            <section class="posts">
+                <div class="container">
+                    <div class="upside">
+                        <h3 class="posts__title">Recent posts</h3>
+                        <a href="#" class="posts__href">View all</a>
+                    </div>
+                    <div class="post">
+                        <div class="post__list">
+                            <article class="post__list-item">
+                                <a href="#" class="post__item-title">Making a design system from scratch</a>
+                                <div class="post__item-info">
+                                    <p class="post__item-date">30 Mar 2020</p>
+                                    <img class="post__item-separator" src="../img/Vector 1.svg" alt="separator">
+                                    <p class="post__item-tags">Design, Pattern</p>
+                                </div>
+                                <p class="post__item-text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </article>
+                            <article class="post__list-item">
+                                <a href="#" class="post__item-title">Creating pixel perfect icons in Figma</a>
+                                <div class="post__item-info">
+                                    <p class="post__item-date">12 Feb 2020</p>
+                                    <img class="post__item-separator" src="../img/Vector 1.svg" alt="separator">
+                                    <p class="post__item-tags">Figma, Icon Design</p> <!--Лучше поставить ограничение 15 символов-->
+                                </div>
+                                <p class="post__item-text text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="works">
+                <div class="container">
+                    <h3 class="featured-works">Featured works</h3>
+                    <div class="works__work-item">
+                        <a href="#" class="works__img">
+                            <picture>
+                                <img class="works__img-item" src="../img/Rectangle 30.jpg">
+                            </picture>
+                        </a>
+                        <div class="works__antiphoto">
+                            <a href="#" class="works__title">Designing Dashboards</a>
+                            <div class="works__info">
+                                <div class="works__year">2020</div>
+                                <p class="works__tag">Dashboard</p>
+                            </div>
+                            <p class="works__desc text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                    <div class="works__separator"></div>
+                    <div class="works__work-item">
+                        <a href="#" class="works__img _ibg">
+                            <img class="works__img-item" src="../img/Rectangle 32.jpg">
+                        </a>
+                        <div class="works__antiphoto">
+                            <a href="#" class="works__title">Vibrant Portraits of 2020</a>
+                            <div class="works__info">
+                                <div class="works__year">2018</div>
+                                <p class="works__tag">Illustration</p>
+                            </div>
+                            <p class="works__desc text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                    <div class="works__separator"></div>
+                    <div class="works__work-item">
+                        <a href="#" class="works__img _ibg">
+                            <img class="works__img-item" src="../img/Rectangle 34.jpg">
+                        </a>
+                        <div class="works__antiphoto">
+                            <a href="#" class="works__title">36 Days of Malayalam type</a>
+                            <div class="works__info">
+                                <div class="works__year">2018</div>
+                                <p class="works__tag">Typography</p>
+                            </div>
+                            <p class="works__desc text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                    <div class="works__separator"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer__socials">
+                    <a class="footer__href-facebook" href="#">
+                        <img class="footer__icon-facebook" src="../img/social_icons/fb.svg" alt="facebook-icon">
+                    </a>
+                    <a class="footer__href-instagram" href="#">
+                        <img class="footer__icon-instagram" src="../img/social_icons/insta.svg" alt="instagram-icon">
+                    </a>
+                    <a class="footer__href-twitter" href="#">
+                        <img class="footer__icon-twitter" src="../img/social_icons/twitter.svg" alt="twitter-icon">
+                    </a>
+                    <a class="footer__href-linkedin" href="#">
+                        <img class="footer__icon-linkedin" src="../img/social_icons/linkedin.svg" alt="linkedin-icon">
+                    </a>
+                </div>
+                <h5 class="footer__copyright">Copyright ©2023 All rights reserved</h5>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>
