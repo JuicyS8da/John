@@ -144,16 +144,10 @@ main {
 }
 
 .about__photo {
-  overflow: hidden;
   display: flex;
   justify-content: center;
-  align-items: center;
-
 }
 .about__photo-item {
-  min-width: 100%;
-  min-height: 100%;
-  flex-shrink: 0;
   border-radius: 50%;
   height: 243px;
   overflow: hidden;
